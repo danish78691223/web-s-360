@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - WEB'S 360</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            background: #0f0f0f;
+            color: #fff;
+            line-height: 1.8;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #00c6ff, #0072ff);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .navbar .logo {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .navbar .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .navbar .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: 0.3s ease;
+        }
+
+        .navbar .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+
+        .about-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .about-header h1 {
+            font-size: 3rem;
+            background: linear-gradient(135deg, #00c6ff, #0072ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        .about-content {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .about-card {
+            flex: 1 1 300px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: transform 0.4s, box-shadow 0.4s;
+        }
+
+        .about-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+        }
+
+        .about-card h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #00c6ff;
+        }
+
+        .about-card p {
+            font-size: 1rem;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .creators-section {
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .creators-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            background: linear-gradient(135deg, #00c6ff, #0072ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .creators-container {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .creator-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            max-width: 320px;
+            transition: transform 0.4s, box-shadow 0.4s;
+        }
+
+        .creator-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+        }
+
+        .creator-card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .creator-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .creator-card p {
+            font-size: 1rem;
+        }
+
+
+.footer {
+  background-color: #212121;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 1px solid #424242;
+  padding-bottom: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px 0;
+}
+
+.footer-section h4 {
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #b0b0b0;
+}
+
+.footer-section a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  margin-bottom: 8px;
+  transition: color 0.3s;
+}
+
+.footer-section a:hover {
+  color: #2874f0;
+}
+
+.contact-info p {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  font-size: 18px;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #2874f0;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.footer-bottom a {
+  margin-right: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.footer-bottom a:hover {
+  color: #2874f0;
+}
+
+.payment-icons img {
+  height: 30px;
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .payment-icons {
+    margin-top: 15px;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html" class="logo">WEB'S 360</a>
+        <div class="nav-links">
+            <a href="index.php">Home</a>
+            <a href="contactus.php">Contact Us</a>
+            <a href="help.html">Help</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="about-header">
+            <h1>About WEB'S 360</h1>
+        </div>
+
+        <div class="about-content">
+            <div class="about-card">
+                <h2>Who We Are</h2>
+                <p>WEB'S 360 is your all-in-one platform for buying, selling, and managing business operations seamlessly.</p>
+            </div>
+
+            <div class="about-card">
+                <h2>Our Mission</h2>
+                <p>We aim to revolutionize e-commerce by offering advanced analytics and secure payment gateways.</p>
+            </div>
+
+            <div class="about-card">
+                <h2>Why Choose Us?</h2>
+                <p>We provide real-time data insights, secure transactions, and responsive designs for all business sizes.</p>
+            </div>
+        </div>
+
+        <div class="creators-section">
+            <div class="creators-header">
+                <h2>Meet the Creators</h2>
+            </div>
+
+            <div class="creators-container">
+                <div class="creator-card">
+                    <img src="images/Danish.jpeg" alt="Creator 1">
+                    <h3>Danish Khan</h3>
+                    <p>Lead Developer & AI Specialist</p>
+                </div>
+
+                <div class="creator-card">
+                    <img src="images/Rohit.jpeg" alt="Creator 2">
+                    <h3>Rohit Gaikwad</h3>
+                    <p>UI/UX Designer & Frontend Engineer</p>
+                </div>
+
+                <div class="creator-card">
+                    <img src="images/Dhiraj.jpeg" alt="Creator 3">
+                    <h3>Dhiraj Dange</h3>
+                    <p>Backend Engineer & Database Expert</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h4>ABOUT</h4>
+      <a href="contactus.html">Contact Us</a>
+      <a href="aboutus.html">About Us</a>
+    </div>
+
+    <div class="footer-section">
+      <h4>GROUP COMPANIES</h4>
+      <a href="#">Flipkart</a>
+      <a href="#">Air India</a>
+      <a href="#">Shopsy</a>
+    </div>
+
+    <div class="footer-section">
+      <h4>HELP</h4>
+      <a href="#">Payments</a>
+      <a href="#">Shipping</a>
+      <a href="#">Cancellation & Returns</a>
+      <a href="#">FAQ</a>
+    </div>
+
+    <div class="footer-section">
+      <h4>CONSUMER POLICY</h4>
+      <a href="#">Cancellation & Returns</a>
+      <a href="#">Terms Of Use</a>
+      <a href="#">Security</a>
+      <a href="#">Privacy</a>
+    </div>
+
+    <div class="footer-section contact-info">
+      <h4>Mail Us:</h4>
+      <p>WEB'S 360 Private Limited<br>
+        07, Sangam Park<br>
+        Behind S.G.R.G. Shinde Collage <br>
+        Bawachi Road Paranda<br>
+        Osmanabad(Dharashiv), 413502,<br>
+        Maharashtra, India
+      </p>
+      <h4>Social:</h4>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-section contact-info">
+      <h4>Registered Office Address:</h4>
+      <p>WEB'S 360 Private Limited<br>
+        07, Sangam Park<br>
+        Behind S.G.R.G. Shinde Collage <br>
+        Bawachi Road Paranda<br>
+        Osmanabad(Dharashiv), 413502,<br>
+        Maharashtra, India<br>
+        CIN : U51109KA2012PTC066107<br>
+        Telephone: <a href="7709201779">7709201779</a> <a href="9511749510">9511749510</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <a href="admin_register.php">Become a Seller</a>
+    <a href="help.html">Help Center</a>
+    <span>© 2024-2025 Webs'360.com</span>
+
+    <div class="payment-icons">
+      <img src="images/visa.png" alt="Visa">
+      <img src="images/mastercard.png" alt="Mastercard">
+      <img src="images/rupay.png" alt="RuPay">
+      <img src="images/cashondelivery.png" alt="Cash On Delivery">
+      <img src="images/service.png" alt="Net Banking">
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

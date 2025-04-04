@@ -1,0 +1,20 @@
+Array
+(
+    [query_id] => 11
+    [response] => hello user
+)
+Array
+(
+    [query_id] => 11
+    [response] => hiii
+)
+Array
+(
+    [query_id] => 12
+    [response] => hii
+)
+Array
+(
+    [query_id] => 13
+    [response] => Ok thank you
+)

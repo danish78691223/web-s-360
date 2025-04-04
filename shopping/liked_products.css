@@ -1,0 +1,19 @@
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.product-card h4, .product-card h5 {
+    margin: 10px 0;
+}
+.remove-like-btn {
+    margin-top: 10px;
+}
